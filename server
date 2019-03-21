@@ -14,7 +14,7 @@ public class server {
 	 	
 		Socket fittia = syahirah.accept();
 	 	
-		System.out.println ("ni hao");
+		System.out.println ("Succesfully connected!");
 	 	
 	 	
 		InputStreamReader gt=new InputStreamReader(fittia.getInputStream());
@@ -24,7 +24,7 @@ public class server {
 	 	 
 		PrintWriter rp = new PrintWriter(fittia.getOutputStream());
 	 	 
-		rp.printIn("whatup");
+		rp.printIn("Ni Hao");
 	 	 
 		rp.flush();
 
