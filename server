@@ -17,12 +17,12 @@ public class server {
 		System.out.println ("ni hao");
 	 	
 	 	
-		InputStreamReader gt=new InputStreamReader(shahfiq.getInputStream());
+		InputStreamReader gt=new InputStreamReader(fittia.getInputStream());
 	 	
 		BufferedReader ot =  new BufferedReader (gt);
 
 	 	 
-		PrintWriter rp = new PrintWriter(shahfiq.getOutputStream());
+		PrintWriter rp = new PrintWriter(fittia.getOutputStream());
 	 	 
 		rp.printIn("whatup");
 	 	 
