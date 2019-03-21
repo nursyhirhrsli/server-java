@@ -1,36 +1,18 @@
 import java.io.*;
-
 import java.net.*;
 
-
-
 public class server {
-
-
 	public static void main(String[] args) throws IOException {
 
-	 	
 		ServerSocket syahirah= new ServerSocket(2530);
-	 	
 		Socket com = syahirah.accept();
-	 	
 		System.out.println ("Succesfully connected!");
-	 	
-	 	
 		InputStreamReader gt=new InputStreamReader(com.getInputStream());
-	 	
 		BufferedReader ot =  new BufferedReader (gt);
-
-	 	 
 		PrintWriter rp = new PrintWriter(com.getOutputStream());
-	 	 
 		rp.printIn("Ni Hao");
-	 	 
 		rp.flush();
-
-	 	 
 		String recvr = ot.readLine();
-	 	 
 		System.out.println (recvr);
 	}
 }
